@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #8a63ad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .title{
+       color: black;
+      text-align: center;
+      font-size: 60px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      width: 100%;
+      height: 70px;
+   }
+   
+   
+   .box{
+    float: left;
+    border-radius: 5px;
+   height: 400px;
+   width: 235px;
+   background-color: rgb(137, 99, 173) ;
+   margin-left: 63px;
+   margin-top: 60px;
+   }
+   
+   .image{
+       height: 200px;
+       width: 150px;
+       margin-left: 35px;
+       margin-top: 35px;
+   }
+   .name{
+       text-align: center;
+       font-size: 18px;
+   }
+   .price{
+      margin-left: 70px;
+      font-size: 20px;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+.btn{
+    margin-top: 10px;
+    margin-left: 70px;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(115, 221, 115);
+    border-radius: 4px;
+   
+}
+.imagemCarrinho{
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+#btnCarrinho{
+    position: fixed;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: flex-end;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: rgb(147, 19, 151);
+    border-radius: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    z-index: 1001;
+ 
+}
+#carrinho{
+    position: fixed;
+    right: 0px;
+    top: 0;
+    height: 100%;
+    width: 500px;
+    background-color: white;
+    visibility: hidden;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+}
+#close {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    right: 10px;
+    top: 10px;
+    font-size: large;
+    cursor: pointer;
+}
+@keyframes deslizarDentro{
+    0%{
+        right: -500px;
+    }
+    100%{
+        right: 0px;
+    }
+}
+@keyframes deslizarFora {
+    0% {
+        right: 0px;
+    }
+    100% {
+        right: -500px;
+    }
+}
+@keyframes deslizarDentroBtn{
+    0%{
+        right: 0px;
+    }
+    100%{
+        right: 480px;
+    }
+}
+@keyframes deslizarForaBtn {
+    0% {
+        right: 480px;
+    }
+    100% {
+        right: 0px;
+    }
+}
+.titlecart{
+  background-color: rgb(137, 99, 173);
+  text-align: center;
+}
+
+#carrinho {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 400px;
+    background-color: #f3e5f5; 
+    visibility: hidden;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    padding: 20px;
+    box-shadow: -4px 0px 10px rgba(0, 0, 0, 0.1);
+}
+ 
+
+#carrinho .titlecart {
+    background-color: #8a63ad; 
+    color: white;
+    padding: 10px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+ 
+
+.item-carrinho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #e1bee7; 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+ 
+.item-carrinho img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+ 
+.item-carrinho div {
+    flex: 1;
+    margin-left: 15px;
+}
+ 
+.item-carrinho strong {
+    font-size: 18px;
+    color: #4b0082; 
+}
+ 
+.item-carrinho span {
+    font-size: 16px;
+    color: #7e57c2; 
+}
+ 
+
+.item-carrinho button {
+    background-color: #7e57c2;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+ 
+.item-carrinho button:hover {
+    background-color: #6a4eb0; 
+}
+ 
+
+#close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: #4b0082; 
+    cursor: pointer;
+}
+ 
+
+#total {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    color: #7e57c2;
+ }
+
+#total span {
+    font-size: 24px;
+    color: #4b0082; 
+}
+ 
+#btnFinalizarCompra {
+    display: block;
+    width: 100%;
+    background-color: #8a63ad;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+ 
+#btnFinalizarCompra:hover {
+    background-color: #7e57c2;
+}
